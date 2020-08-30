@@ -1,0 +1,467 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	font-weight: normal;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1100px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.logo-icon {
+	font-family: Merriweather;
+	font-weight: 900;
+	color: #005FA3;
+	text-decoration: none;
+	font-size: 36px;
+}
+
+.logo img {
+	margin-right: 25px;
+}
+
+.header {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacts-nav li {
+	margin-left: 40px;
+}
+
+.contacts-nav {
+	list-style: none;
+	display: flex;
+	font-size: 13px;
+}
+
+.contacts-nav img {
+	margin-right: 15px;
+}
+
+.nav {
+	margin-top: 20px;
+}
+
+.links-nav {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+.links-nav li a {
+	margin-left: 40px;
+	text-decoration: none;
+	color: black;
+}
+
+.links-nav li a:hover {
+	text-decoration: underline;
+	color: #005FA3;
+}
+
+.first-screen {
+	position: relative;
+	padding-bottom: 80px;
+	background: url(../images/first-screen.jpg);
+}
+
+.first-title {
+	font-family: Merriweather;
+	font-weight: bold;
+	font-size: 48px;
+	color: #FFFFFF;
+	line-height: 66px;
+	padding-top: 150px;
+	margin-top: 0;
+}
+
+.first-screen-button {
+	font-size: 18px;
+	color: #FFFFFF;
+	background: #005FA3;
+	padding: 20px 50px;
+	border: none;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.button-prev,
+.button-next,
+.button-back-clients,
+.button-forward-clients,
+.button-prev-reviews,
+.button-next-reviews {
+	width: 60px;
+	height: 60px;
+	color: #000;
+	font-size: 40px;
+	border: none;
+	cursor: pointer;
+	background: rgba(0, 95, 163, 0.2);
+	padding: 0;
+}
+
+.button-prev,
+.button-back-clients,
+.button-prev-reviews {
+	margin-right: -4px;
+}
+
+.button-prev:hover,
+.button-next:hover,
+.button-back-clients:hover,
+.button-forward-clients:hover,
+.button-prev-reviews:hover,
+.button-next-reviews:hover {
+	background: rgba(0, 95, 163);
+}
+
+.button-prev:before,
+.button-next:before,
+.button-back-clients:before,
+.button-forward-clients:before,
+.button-prev-reviews:before,
+.button-next-reviews:before {
+	content: '';
+	display: block;
+	border: 1px solid #fff;
+	width: 10px;
+	height: 10px;
+	border-right: none;
+	border-bottom: none;
+	transform: rotate(-45deg);
+	margin: 0 26px;
+}
+
+.button-next:before,
+.button-forward-clients:before,
+.button-next-reviews:before {
+	transform: rotate(135deg);
+	margin: 0 20px;
+}
+
+.button-prev,
+.button-next {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.button-prev:hover,
+.button-next:hover {
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.first-slider .slider-nav {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.first-slider .slick-dots {
+	position: initial;
+	width: auto;
+}
+
+.first-slider .slick-dots li {
+	margin: 0 30px 0 0;
+}
+
+.first-slider .slick-dots li button:before {
+	content: '';
+	position: initial;
+	display: block;
+	background: #fff;
+	width: 10px;
+	height: 10px;
+	opacity: 0.2;
+	border-radius: 50%;
+}
+
+.first-slider .slick-dots li.slick-active button:before {
+	opacity: 1;
+}
+
+.services {
+	background: #EBEBEB;
+	padding-bottom: 100px;
+}
+
+
+.title-screen {
+	font-weight: 900;
+	font-size: 24px;
+	color: #BDBDBD;
+	margin-top: 0;
+	padding-top: 100px;
+}
+
+.second-title {
+	font-family: Merriweather;
+	font-weight: 900;
+	font-size: 48px;
+	margin-top: 20px;
+}
+
+.services-list {
+	margin-top: 60px;
+}
+
+.service-desc {
+	font-weight: 900;
+	font-size: 24px;
+	color: #FFF;
+	position: absolute;
+	left: 40px;
+	bottom: 0px;
+}
+
+.service-item {
+	display: inline-block;
+	margin-right: 21px;
+	margin-bottom: 21px;
+	position: relative;
+}
+
+.service-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.second-title span {
+	color: #005FA3;
+	font-family: Merriweather;
+	font-weight: 900;
+	font-size: 48px;
+}
+
+.text-company {
+	line-height: 25px;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.about-company {
+	float: left;
+	width: 40%;
+}
+
+.about-company-item {
+	float: right;
+	width: 49.5%;
+	margin-top: -20px;
+	margin-bottom: 70px;
+}
+
+.company-item {
+	width: 255px;
+	height: 255px;
+	background: #EBEBEB;
+	padding: 30px 40px 40px 40px;
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	vertical-align: top;
+	position: relative;
+}
+
+.company-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.company-item:hover {
+	background: #005FA3;
+	color: #fff;
+}
+
+.company-item:hover a {
+	color: #fff;
+}
+
+.about-item {
+	margin: 0;
+	font-weight: 700;
+}
+
+.about-item span {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-weight: 900;
+	font-size: 55px;
+}
+
+.company-item a {
+	color: #005FA3;
+	font-size: 14px;
+	font-weight: 700;
+	position: absolute;
+	bottom: 40px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.clients {
+	background: #EBEBEB;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.our-clients {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.clients-item-slider {
+	margin-bottom: 40px;
+}
+
+.review-1 {
+	width: 1100px;
+	height: 320px;
+	background: #EBEBEB;
+	padding: 45px 95px;
+	margin-bottom: 110px;
+}
+
+.review-text {
+	font-weight: 300;
+	font-size: 18px;
+	padding-bottom: 50px;
+}
+
+.review-icon {
+	margin-right: 35px;
+	float: left;
+}
+
+.name-reviewer {
+	font-weight: 900;
+	font-size: 18px;
+	margin-bottom: 3px;
+	margin-top: 27px;
+}
+
+.position-reviewer {
+	font-size: 14px;
+}
+
+.reviews {
+	position: relative;
+	padding-bottom: 100px;
+}
+
+
+.footer {
+	background: url(../images/footer-screen.jpg);
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	position: relative;
+}
+
+h3 {
+	font-family: Merriweather;
+	font-weight: 900;
+	font-size: 48px;
+	color: #fff;
+	margin-top: 0;
+}
+
+.contact-text {
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	padding-bottom: 50px;
+}
+
+.contacts-footer {
+	list-style: none;
+	color: #fff;
+	font-weight: 300;
+	font-size: 21px;
+	padding: 0;
+}
+
+.contacts-footer li {
+	display: inline-block;
+	margin-right: 35px;
+}
+
+.contacts-footer img {
+	margin-right: 15px;
+}
+
+.form-1 {
+	display: flex;
+}
+
+.data-form {
+	font-size: 16px;
+	color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+	font-weight: 300;
+	font-size: 21px;
+	color: #fff;
+	border: 1px solid #FFFFFF;
+	background-color: transparent;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	margin-top: 20px;
+}
+
+.input-name {
+	margin-right: 30px;
+}
+
+.contact-form textarea {
+	width: 530px;
+	height: 70px;
+}
+
+.footer-button {
+	font-size: 18px;
+	color: #fff;
+	padding: 15px 40px;
+	background: #005FA3;
+	border: none;
+	margin-top: 50px;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+.footer-bottom .container {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
+}
+
+.footer-bottom-text {
+	font-weight: 300;
+	font-size: 14px;
+}
