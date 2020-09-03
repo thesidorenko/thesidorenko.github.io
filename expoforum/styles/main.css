@@ -1,0 +1,467 @@
+@font-face {
+	font-family: "Circe";
+	src: url("../fonts/circe/Circe-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Plumb";
+	src: url("../fonts/plumb/font_Plumb.woff") format("woff");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Circe";
+	font-size: 16px;
+	color: white;
+	margin: 0;
+	padding: 0;
+	/*overflow-x: hidden;*/
+}
+
+
+.screen-1 {
+	background: url("../images/screen-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.header .container {
+	display: flex;
+	height: 70px;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.header {
+	border-bottom: 1px solid white;
+}
+
+.header .logo {
+	width: 175.27px;
+	height: 24px;
+}
+
+.main-menu {
+	display: inline-block;
+}
+
+.main-menu li {
+	list-style: none;
+	display: inline-block;
+}
+
+.main-menu li a {
+	text-decoration: none;
+	padding-right: 47px;
+	color: white;
+	font-family: 'Circe';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.search,
+.earth {
+	padding-right: 50px;
+	color: white;
+	text-decoration: none;
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.earth img {
+	padding-right: 11px;
+}
+
+.first-title {
+	float: left;
+}
+
+.name-site {
+	font-family: Plumb;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	margin-top: 150px;
+}
+
+.city {
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	margin-top: -25px;
+}
+
+.about {
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.blocks {
+	position: relative;
+	width: 550px;
+	float: right;
+	margin-bottom: 50px;
+}
+
+.block-1,
+.block-2 {
+	width: 255px;
+	height: 148px;
+	padding: 30px 40px;
+	display: inline-block;
+}
+
+.block-3,
+.block-4 {
+	width: 255px;
+	height: 175px;
+	padding: 30px 40px;
+	display: inline-block;
+	margin-top: 30px;
+
+}
+
+.block-1 {
+	background: #2378FC;
+	margin-right: 25px;
+}
+
+.block-2 {
+	background: #30BCC9;
+}
+
+.block-3 {
+	background: #FFC41E;
+	margin-right: 25px;
+}
+
+.block-4 {
+	background: #F6404F;
+
+}
+
+.title-block {
+	font-family: Plumb;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	margin-top: -5px;
+}
+
+.blocks a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.side-menu {
+	height: 426px;
+	background: #2378FC;
+
+}
+
+.menu-list {
+	justify-content: space-between;
+	display: flex;
+}
+
+.site-menu-item {
+	width: 210px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.item-links {
+	margin-top: 60px;
+}
+
+.item-links h3 {
+	font-family: Plumb;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.item-links ul {
+	padding: 0px;
+	list-style: none;
+}
+
+.item-links ul li {
+	padding: 10px 0;
+}
+
+.item-links a {
+	text-decoration: none;
+	color: white;
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.item-links a:hover {
+	text-decoration: underline;
+	color: #FFC41E;
+}
+
+.events {
+	background: #FFC41E;
+	color: #2E373B;
+	padding-bottom: 75px;
+}
+
+.all-events {
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.future-events {
+	font-family: Plumb;
+	font-weight: 500;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.all-events a {
+	font-family: Plumb;
+	font-size: 21px;
+	color: #2E373B;
+}
+
+.all-events a::after {
+	content: "→";
+}
+
+.events-item {
+	margin-top: 30px;
+}
+
+.all-item {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-right: 70px;
+}
+
+.all-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.photo-event {
+	width: 350px;
+	height: 240px;
+}
+
+.data-event {
+	font-family: Circe;
+	font-size: 14px;
+}
+
+.name-event {
+	font-family: Plumb;
+	font-size: 21px;
+	color: #F6404F;
+	margin: -5px 0;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.about-event {
+	font-family: Circe;
+	font-size: 16px;
+}
+
+.news {
+	background: #FAF3E3;
+	color: black;
+	padding-bottom: 85px;
+}
+
+.all-news {
+	padding-top: 70px;
+}
+
+.news-item {
+	float: left;
+	width: 50%;
+}
+
+.news-icon {
+	float: right;
+	width: 50%
+}
+
+.news-item-1,
+.news-item-2 {
+	width: 445px;
+	height: 215px;
+}
+
+.news-item-1 {
+	margin-bottom: 50px;
+}
+
+.title-news {
+	display: flex;
+	justify-content: space-between;
+}
+
+.heading-news {
+	font-family: Plumb;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.more-news a {
+	font-family: Plumb;
+	font-weight: 500;
+	font-size: 21px;
+	color: #2E373B;
+	;
+}
+
+.more-news a::after {
+	content: "→";
+}
+
+.news-list {
+	margin-top: 30px;
+}
+
+.likee-party-2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.news-1 {
+	float: left;
+	margin-right: 30px;
+}
+
+.data-news {
+	font-family: Circe;
+	font-size: 16px;
+	color: #F6404F;
+}
+
+.about-news {
+	font-family: Plumb;
+	font-weight: 500;
+	font-size: 21px;
+	text-decoration: none;
+	color: #000;
+}
+
+.news-2 {
+	padding-top: 30px;
+	float: left;
+	margin-right: 30px;
+}
+
+.footer {
+	background: #30BCC9;
+}
+
+.all-footer {
+	padding-top: 30px;
+}
+
+.all-footer li {
+	list-style: none;
+	margin-left: -40px;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+
+.all-footer li a {
+	text-decoration: none;
+	color: #E0E0E0;
+	font-family: Circe;
+}
+
+.all-footer li a:hover {
+	text-decoration: underline;
+	color: #FFC41E;
+}
+
+.footer-links {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+}
+
+.footer-title {
+	font-family: Plumb;
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.social li {
+	display: inline-block;
+	margin-right: 70px;
+}
+
+.app img {
+	padding-bottom: 10px;
+}
+
+.app {
+	margin-top: -30px;
+}
+
+.mail-subscriber {
+	margin-top: -55px;
+}
+
+.subscription {
+	color: #E0E0E0;
+	font-family: Circe;
+	font-size: 14px;
+}
+
+.mail-subscriber-form__input {
+	float: left;
+	width: 215px;
+	height: 40px;
+	border: none;
+	color: #9C9C9C;
+	font-family: Circe;
+	font-size: 14px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.mail-subscriber-form__button {
+	background-color: #F6404F;
+	background-image: url(../images/send.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	border: none;
+	padding: 0;
+}
