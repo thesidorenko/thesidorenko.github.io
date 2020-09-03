@@ -10,7 +10,9 @@ $('.first-slider .slides').slick({
 	prevArrow: $('.button-prev'),
 });
 
-$('.clients-slider').slick({
+$('.clients-slider .slides').slick({
+	dots: true,
+	appendDots: $('.clients-slider .slider-nav'),
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
@@ -18,7 +20,9 @@ $('.clients-slider').slick({
 	prevArrow: $('.button-back-clients'),
 });
 
-$('.reviews-slider').slick({
+$('.reviews-slider .slides').slick({
+	dots: true,
+	appendDots: $('.reviews-slider .slider-nav'),
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
