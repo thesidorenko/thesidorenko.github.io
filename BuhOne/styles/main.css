@@ -48,6 +48,7 @@ body {
 
 .contacts-nav img {
 	margin-right: 15px;
+	vertical-align: middle;
 }
 
 .nav {
@@ -470,6 +471,7 @@ h3 {
 
 .contacts-footer img {
 	margin-right: 15px;
+	vertical-align: middle;
 }
 
 .form-1 {
@@ -501,6 +503,7 @@ h3 {
 .contact-form textarea {
 	width: 530px;
 	height: 70px;
+	resize: none;
 }
 
 .footer-button {
