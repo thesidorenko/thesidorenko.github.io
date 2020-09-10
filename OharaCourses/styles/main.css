@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -93,13 +94,22 @@ body {
     vertical-align: middle;
 }
 
+.menu li svg {
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+
 .menu li:active {
     border-right: solid;
     border-width: 3px;
     border-color: #5E81F4;
-    color: #000;
 }
 
+.menu li a:active {
+    color: #000;
+}
+    
 .upgrade {
     width: 192px;
     background: #F5F5FB;
@@ -128,13 +138,6 @@ body {
     outline: none;
     cursor: pointer;
 }
-
-/*right*/
-
-.icon-profile {
-    margin-bottom: 70px;
-}
-
 
 /*middle*/
 
@@ -170,6 +173,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .title-tabs {
@@ -196,7 +200,7 @@ body {
     padding-right: 30px;
 }
 
-.tabs_caption li .active {
+.tabs_caption li.active {
     color: #5E81F4;
     text-decoration: underline;
 }
@@ -205,6 +209,187 @@ body {
     display: none;
 }
 
-.tabs_content .active {
+.tabs_content.active {
     display: block;
+}
+
+.course-1  {
+    margin: 0 30px 35px 30px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px 10px 40px 30px;
+    background-size: cover;
+}
+
+.about-course {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+
+.amount-lessons {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 150px;   
+}
+
+.time-course {
+    font-weight: 200;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.play-course {
+    width: 46px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.play-course:after {
+    content: "";
+    position: absolute;
+    top: 30%; 
+    left: 37%; 
+    border: 9px solid transparent; 
+    border-left: 14px solid #fff;
+}
+
+.icon-course {
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+}
+
+.course-2 {
+    width: 44%;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px 10px 40px 30px;
+    margin-left: 30px;
+    position: relative;
+    float: left;
+}
+
+.course-3 {
+    width: 44%;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px 10px 40px 30px;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/*right*/
+
+.icon-profile {
+    margin-right: 25px;
+}
+
+.avatar {
+    display: flex;
+}
+
+.general-title {
+    font-size: 18px;
+    margin-top: 62px;
+    margin-bottom: 30px;
+}
+
+.progress-icons {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    float: left;
+}
+
+.progress-icon-1 {
+    background-color: #EEF2FD;
+    padding-left: 14px;
+    padding-top: 11px;
+}
+
+.progress-icon-2 {
+    background: #D5F5FB;
+    padding-left: 11px;
+    padding-top: 12px;
+}
+
+.progress-icon-3 {
+    background: #FFEFD6;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.caption-progress {
+    font-size: 16px;
+    margin-bottom: -4px;
+}
+
+.caption-progress a {
+    text-decoration: none;
+    color: #000;
+}
+
+.level-progress {
+    font-weight: normal;
+    font-size: 14px;
+    color: #83919E;
+    margin-bottom: 30px; 
+}
+
+.icon-discussion {
+    background-color: #EEF2FD;
+    padding-left: 13px;
+    padding-top: 15px;
+}
+
+.icon-animation {
+    background: #FFEFD6;
+    padding-left: 12px;
+    padding-top: 13px;
+}
+
+.download {
+    background-image:url(../images/download.png);
+    margin: 60px 40px 0 0;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+
+.download-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #555FFF;
+    border-radius: 50%;
+
+}
+
+.download-android {
+   top: 80px;
+   left: 40px;
+   padding: 10px 13px;
+}
+
+.download-ios {
+    top: 80px;
+    left: 95px;
+    padding: 9px 11px;
 }
