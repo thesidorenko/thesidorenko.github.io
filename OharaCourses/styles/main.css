@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+/*
+* @TODO: создать переменные
+*/
+
+:root {
+    --phioletoiy: #5E81F4;
+}
+
 body {
     min-width: 1300px;
     margin: 0;
@@ -36,7 +44,7 @@ body {
 }
 
 .logo {
-    color: #5E81F4;
+    color: var(--phioletoiy);
     font-size: 22px;
     text-decoration: none;
 }
@@ -46,7 +54,7 @@ body {
     font-size: 24px;
     font-family: Playfair Display;
     font-weight: bold;
-    background-color: #5E81F4;
+    background-color: var(--phioletoiy);
     border-radius: 12px;
     width: 48px;
     height: 48px;
@@ -59,7 +67,7 @@ body {
 .button-join {
     font-size: 16px;
     color: #FFFFFF;
-    background: #5E81F4;
+    background: var(--phioletoiy);
     border-radius: 10px;
     border: none;
     font-family: Inter;
@@ -103,13 +111,13 @@ body {
 .menu li:active {
     border-right: solid;
     border-width: 3px;
-    border-color: #5E81F4;
+    border-color: var(--phioletoiy);
 }
 
 .menu li a:active {
     color: #000;
 }
-    
+
 .upgrade {
     width: 192px;
     background: #F5F5FB;
@@ -127,7 +135,7 @@ body {
 }
 
 .button-upgrade {
-    background: #5E81F4;
+    background: var(--phioletoiy);
     border-radius: 10px;
     font-size: 16px;
     color: #FFFFFF;
@@ -201,7 +209,7 @@ body {
 }
 
 .tabs_caption li.active {
-    color: #5E81F4;
+    color: var(--phioletoiy);
     text-decoration: underline;
 }
 
@@ -213,15 +221,18 @@ body {
     display: block;
 }
 
-.course-1  {
-    margin: 0 30px 35px 30px;
+.course-item {
     position: relative;
+    min-height: 360px;
+    margin: 0 30px 35px 30px;
+    padding: 30px 40px 80px;
     border-radius: 10px;
-    padding: 10px 10px 40px 30px;
     background-size: cover;
 }
 
 .about-course {
+    float: left;
+    margin-top: 0;
     font-family: Inter;
     font-weight: 500;
     font-size: 24px;
@@ -229,20 +240,19 @@ body {
 }
 
 .amount-lessons {
+    clear: both;
     font-family: Inter;
     font-weight: normal;
     font-size: 18px;
     color: #fff;
-    margin-bottom: 150px;   
 }
 
 .time-course {
+    float: right;
+    margin: 25px 8px 0;
     font-weight: 200;
     color: #fff;
     font-size: 16px;
-    position: absolute;
-    right: 30px;
-    top: 30px;
 }
 
 .play-course {
@@ -257,9 +267,9 @@ body {
 .play-course:after {
     content: "";
     position: absolute;
-    top: 30%; 
-    left: 37%; 
-    border: 9px solid transparent; 
+    top: 30%;
+    left: 37%;
+    border: 9px solid transparent;
     border-left: 14px solid #fff;
 }
 
@@ -271,22 +281,20 @@ body {
 
 .course-2 {
     width: 44%;
-    background-size: cover;
-    border-radius: 10px;
-    padding: 10px 10px 40px 30px;
-    margin-left: 30px;
+    margin: 0 0 0 30px;
     position: relative;
     float: left;
 }
 
 .course-3 {
     width: 44%;
-    background-size: cover;
-    border-radius: 10px;
-    padding: 10px 10px 40px 30px;
-    position: relative;
     float: right;
-    margin-right: 30px;
+    margin: 0 30px 0 0;
+}
+
+.course-2,
+.course-3 {
+    min-height: 310px;
 }
 
 .clearfix {
@@ -350,7 +358,20 @@ body {
     font-weight: normal;
     font-size: 14px;
     color: #83919E;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 100px;
+    background: rgba(94, 129,244, 0.2);
+    height: 8px;
+    border-radius: 10px;
+}
+
+.progress-bar-value {
+    background: #5E81F4;
+    height: 8px;
+    border-radius: 10px;
 }
 
 .icon-discussion {
@@ -366,30 +387,45 @@ body {
 }
 
 .download {
-    background-image:url(../images/download.png);
+    background-image: url(../images/download.png);
+    min-height: 204px;
     margin: 60px 40px 0 0;
+    padding: 20px 25px;
     background-size: cover;
     border-radius: 8px;
     position: relative;
 }
 
+.download span {
+    display: block;
+    width: 160px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.download-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.download-icons li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
 .download-icon {
-    position: absolute;
+    display: flex;
+    background: #fff;
     width: 40px;
     height: 40px;
-    background: #555FFF;
     border-radius: 50%;
-
+    justify-content: center;
+    align-items: center;
 }
 
-.download-android {
-   top: 80px;
-   left: 40px;
-   padding: 10px 13px;
-}
-
-.download-ios {
-    top: 80px;
-    left: 95px;
-    padding: 9px 11px;
+.download-android img {
+    transform: translateX(2px);
 }
