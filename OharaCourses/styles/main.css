@@ -2,12 +2,9 @@
     box-sizing: border-box;
 }
 
-/*
-* @TODO: создать переменные
-*/
-
 :root {
-    --phioletoiy: #5E81F4;
+    --violet: #5E81F4;
+    --grey: #8DA1B5;
 }
 
 body {
@@ -44,7 +41,7 @@ body {
 }
 
 .logo {
-    color: var(--phioletoiy);
+    color: var(--violet);
     font-size: 22px;
     text-decoration: none;
 }
@@ -54,7 +51,7 @@ body {
     font-size: 24px;
     font-family: Playfair Display;
     font-weight: bold;
-    background-color: var(--phioletoiy);
+    background-color: var(--violet);
     border-radius: 12px;
     width: 48px;
     height: 48px;
@@ -67,7 +64,7 @@ body {
 .button-join {
     font-size: 16px;
     color: #FFFFFF;
-    background: var(--phioletoiy);
+    background: var(--violet);
     border-radius: 10px;
     border: none;
     font-family: Inter;
@@ -84,13 +81,13 @@ body {
 }
 
 .menu li {
-    color: #8DA1B5;
+    color: var(--grey);
     list-style: none;
     margin-bottom: 48px;
 }
 
 .menu li a {
-    color: #8DA1B5;
+    color: var(--grey);
 }
 
 .menu a {
@@ -111,7 +108,7 @@ body {
 .menu li:active {
     border-right: solid;
     border-width: 3px;
-    border-color: var(--phioletoiy);
+    border-color: var(--violet);
 }
 
 .menu li a:active {
@@ -135,7 +132,7 @@ body {
 }
 
 .button-upgrade {
-    background: var(--phioletoiy);
+    background: var(--violet);
     border-radius: 10px;
     font-size: 16px;
     color: #FFFFFF;
@@ -150,7 +147,7 @@ body {
 /*middle*/
 
 .search {
-    padding-top: 45px;
+    padding-top: 43px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
@@ -181,7 +178,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .title-tabs {
@@ -209,7 +206,7 @@ body {
 }
 
 .tabs_caption li.active {
-    color: var(--phioletoiy);
+    color: var(--violet);
     text-decoration: underline;
 }
 
@@ -318,12 +315,29 @@ body {
     margin-bottom: 30px;
 }
 
+.progress-list {
+    list-style: none;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.progress-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
 .progress-icons {
     margin-right: 20px;
     width: 48px;
     height: 48px;
     border-radius: 6px;
     float: left;
+}
+
+.about-progress {
+    float: right;
 }
 
 .progress-icon-1 {
@@ -347,6 +361,12 @@ body {
 .caption-progress {
     font-size: 16px;
     margin-bottom: -4px;
+    margin-top: 0;
+}
+
+.about-progress a {
+    text-decoration: none;
+    color: #000;
 }
 
 .caption-progress a {
@@ -354,24 +374,49 @@ body {
     color: #000;
 }
 
-.level-progress {
+.level-progress, .data-task {
     font-weight: normal;
     font-size: 14px;
-    color: #83919E;
-    margin-bottom: 30px;
+    color: var(--grey);
 }
 
-.progress-bar {
+.progress-bar-1 {
     width: 100px;
     background: rgba(94, 129,244, 0.2);
     height: 8px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-.progress-bar-value {
-    background: #5E81F4;
+.progress-bar-value-1 {
+    background: var(--violet);
     height: 8px;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.progress-bar-2 {
+    width: 100px;
+    background: rgba(12, 195, 231, 0.18);
+    height: 8px;
+    border-radius: 20px;
+}
+
+.progress-bar-value-2 {
+    background: #0CC3E7;
+    height: 8px;
+    border-radius: 20px;
+}
+
+.progress-bar-3 {
+    width: 100px;
+    background: #FFEFD6;
+    height: 8px;
+    border-radius: 20px;
+}
+
+.progress-bar-value-3 {
+    background: #FFAE33;
+    height: 8px;
+    border-radius: 20px;
 }
 
 .icon-discussion {
