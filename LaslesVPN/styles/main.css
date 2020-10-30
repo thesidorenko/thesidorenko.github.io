@@ -48,10 +48,11 @@ body {
 	justify-content: space-between;
 	font-size: 16px;
 	color: var(--grey);
+	padding: 0;
 }
 
 .links-nav li a {
-	margin-right: 40px;
+	margin-left: 40px;
 	text-decoration: none;
 	color: var(--grey);
 }
@@ -67,11 +68,12 @@ body {
 	background-color: transparent;
 	outline: none;
 	cursor: pointer;
-	margin-right: 30px;
 }
 
 .sign-in {
+	margin-right: 30px;
 	border: none;
+	padding: 0;
 }
 
 .sign-up {
@@ -135,15 +137,15 @@ body {
 	margin-top: 80px;
 	display: flex;
 	justify-content: space-around;
-	width: 1140px;
-	height: 200px;
+	align-items: center;
 	box-shadow: -5px 20px 45px 0px rgba(79,86,101,0.1);
 }
 
 .description {
 	border-right: 2px solid #EEEFF2;
 	padding-right: 140px;
-	margin: auto; 
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .description:last-child {
@@ -189,7 +191,6 @@ body {
 	font-weight: 500;
 	font-size: 35px;
 	line-height: 50px;
-	padding-top: 20px;
 }
 
 .about-features {
@@ -204,12 +205,18 @@ body {
 	color: var(--grey);
 	padding-bottom: 15px;
 	list-style-position: inside;
-	list-style-image: url(../images/check-circle.png);
+	list-style: none;
+}
+
+.features-list li:before {
+	content: url(../images/check-circle.png);
+	vertical-align: -webkit-baseline-middle;
+	margin-right: 10px;
 }
 
 .plan-selection {
 	background: #F6F6F6;
-	padding-bottom: 50px;
+	padding-bottom: 80px;
 }
 
 .general-title {
@@ -218,7 +225,7 @@ body {
 	line-height: 50px;
 	padding-top: 70px;
 	text-align: center;
-	margin-top: 0;
+	margin: 0;
 }
 
 .general-text {
@@ -240,6 +247,14 @@ body {
 	padding-top: 70px;
 	margin-right: 85px;
 	vertical-align: middle;
+	position: relative;
+	padding-bottom: 150px;
+}
+
+.tariff {
+	position: absolute;
+	bottom: 50px;
+	left: 80px;
 }
 
 .plan:last-child {
@@ -255,7 +270,8 @@ body {
 .function-list {
 	list-style: none;
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 55px;
+	padding: 0;
 }
 
 .function-list li:before {
@@ -302,10 +318,6 @@ body {
 	border: 2px solid var(--red);
 }
 
-.locations-vpn {
-	background: #F6F6F6;
-}
-
 .maps {
 	display: block;
 	margin: auto;
@@ -317,26 +329,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.sponsor-n {
-	width: 200px;
-	height: 112px;
-}
-
-.sponsor-r,  .sponsor-s {
-	width: 156px;
-	height: 50px;
-}
-
-.sponsor-a {
-	width: 277.76px;
-	height: 208.32px;
-}
-
-.sponsor-d {
-	width: 187.02px;
-	height: 63.59px;
+	margin-top: 90px;
 }
 
 .reviews {
@@ -344,9 +337,13 @@ body {
 	margin-bottom: 10px;
 }
 
+.reviews-slides {
+	width: 100vw;
+}
+
 .slider-item {
-	/*width: 400px;*/
-	/*height: 230px;*/
+	width: 400px;
+	height: 230px;
 	background: #FFFFFF;
 	border: 2px solid #DDDDDD;
 	border-radius: 10px;
@@ -395,7 +392,7 @@ body {
 
 .slider-nav {
 	margin-top: 60px;
-	padding-bottom: 60px;
+	margin-bottom: 60px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row-reverse;
@@ -428,10 +425,13 @@ body {
 	margin: 0 15px 0 0;
 }
 
+.slick-dots li.slick-active {
+	margin: 0 40px 0 0;
+}
+
 .slick-dots li button:before {
 	content: '';
 	list-style: none;
-	position: initial;
 	display: block;
 	background: var(--grey);
 	border-radius: 50%;
@@ -486,6 +486,7 @@ footer {
 	background: #F8F8F8;
 	margin-top: -175px;
 	padding-top: 170px; 
+	padding-bottom: 10px;
 }
 
 .our-social-network {
@@ -493,7 +494,6 @@ footer {
 }
 
 .social-network {
-	/*width: 570px;*/
 	margin-right: 250px;
 	float: left;
 }
