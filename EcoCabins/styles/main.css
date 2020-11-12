@@ -1,0 +1,342 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1050px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.first-screen {
+	background: url(../images/first-screen.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 200px;
+	position: relative;
+}
+
+.header {
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-menu {
+	padding: 0;
+	margin: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.main-menu li a {
+	text-decoration: none;
+	color: #fff;
+	margin-right: 40px;
+}
+
+.main-menu li:last-child a {
+	margin-right: 0px;
+}
+
+.main-menu li a:hover {
+	color: #606B74;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px 20px;
+}
+
+.section-title {
+	width: 440px;
+	margin-top: 180px;
+}
+
+.description-houses {
+	color: #fff;
+	font-size: 16px;
+	opacity: 0.8;
+	font-weight: 400;
+	margin: 0;
+}
+
+h1 {
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 30px;
+	color: #fff;
+	margin: 15px 0 0 0;
+}
+
+.button-watch-film {
+	font-family: Rubik;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 500;
+	border: none;
+	background: transparent;
+	float: right;
+	position: absolute;
+    right: 175px;
+    bottom: 65px;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.button-watch-film:before {
+	content: '\25B6';
+	padding: 13px;
+	font-size: 14px;
+	padding: 11px 13px 12px 15px;
+	margin-right: 10px	;
+	background: #FFF;
+	color: #000;
+	border-radius: 50%;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.social-links {
+	padding: 0;
+	list-style: none;
+	transform: rotate(90deg);
+	position: absolute;
+	right: -80px;
+	bottom: 250px;
+}
+
+.social-links li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.social-links li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+/*.social-links li a:hover {
+	color: #606B74;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px 20px;
+}*/
+
+.social-links li:last-child  {
+	margin-right: 0;
+}
+
+.materials {
+	padding: 60px 0;
+	position: relative;
+}
+
+.about-materials {
+	width: 400px;
+	float: left;
+	margin-right: 200px;
+}
+
+.title-materials {
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 30px;
+	color: #222F33;
+	margin-bottom: 15px;
+}
+
+.about-materials p {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #646D70;
+	line-height: 26px;
+	margin: 0;
+}
+
+.button-materials {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	color: #606D70;
+	margin-top: 15px;
+	border: 1px solid #646D70;
+	border-radius: 4px;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+	padding: 10px 15px;
+}
+
+.button-materials:hover {
+	color: #fff;
+	background-color: #646D70;
+}
+
+.slider-materials {
+	z-index: 1;
+	margin-top: -100px;
+
+}
+
+
+
+.innovation {
+	background: #222F33;
+	padding: 70px 0 80px 0;
+	position: relative;
+}
+
+.innovation:before {
+	content: "";
+	background: #222F33;
+	min-height: 150px;
+	min-width: 555px;
+	position: absolute;
+	right: 0;
+	top: -49%;
+}
+
+.innovation-title {
+	color: #fff;
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 30px;
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+.innovation-content {
+	display: flex;
+}
+
+.innovation-content p {
+	color: #fff;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 25px;
+	margin: 0 70px 0 0;
+	opacity: 0.7;
+}
+
+.innovation-content p:last-child {
+	margin: 0;
+}
+
+.about-cabins {
+	padding: 85px 0;
+}
+
+.images-cabins {
+	float: left;
+	width: 38%;
+}
+
+.description-cabins {
+	float: right;
+	width: 47%;
+}
+
+.advantages-cabins {
+	margin-right: 110px;
+	margin-bottom: 63px;
+	display: inline-block;
+	width: 180px;
+	height: 90px;
+}
+
+.advantages-cabins:nth-child(even) {
+	margin-right: 0;
+}
+
+.advantages-cabins:nth-child(n+5) {
+	margin-bottom: 0;
+}
+
+.advantages-title {
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	margin: 0 0 10px 0;
+	color: #000;
+}
+
+.advantages-content {
+	margin: 0;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #646D70;
+	opacity: 0.7;
+	line-height: 22px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+footer {
+	padding: 35px 70px;
+	background: #222F33;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-mail {
+	margin: 0;
+	color: #FFFFFF;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	opacity: 0.6;
+}
+
+.footer-links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-links li {
+	display: inline-block;
+	margin-right: 35px;
+}
+
+.footer-links li:last-child {
+	margin-right: 0;
+}
+
+.footer-links li a {
+	color: #FFFFFF;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	opacity: 0.6;
+	text-decoration: none;
+}
