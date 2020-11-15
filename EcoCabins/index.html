@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>EcoCabins</title>
@@ -8,30 +9,35 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
 	<div class="first-screen">
-		<div class="container">
-			<header class="header">
-					<a class="logo" href="#"><img alt="logo-site" src="images/logo-cabins.png"></a>
-					<ul class="main-menu">
-						<li><a href="#">Modellen</a></li>
-						<li><a href="#">Kopen</a></li>
-						<li><a href="#">Huren</a></li>
-						<li><a href="#">Nieuws</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>	
-			</header>
-			<section class="section-title">
-				<p class="description-houses">Duurzame tiny huisjes</p>
-				<h1>Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen</h1>
-			</section>
-			<button class="button-watch-film">Bekijk de film</button>
-		</div>
-		<ul class="social-links">
-			<li><a href="#">Instagram</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Linkedin</a></li>
-		</ul>
+		<header class="header">
+			<div class="container">
+				<a class="logo" href="#"><img alt="logo-site" src="images/logo-cabins.png"></a>
+				<ul class="main-menu">
+					<li><a href="#">Modellen</a></li>
+					<li><a href="#">Kopen</a></li>
+					<li><a href="#">Huren</a></li>
+					<li><a href="#">Nieuws</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		<section class="site-description">
+			<div class="container">
+				<div class="section-title">
+					<p class="description-houses">Duurzame tiny huisjes</p>
+					<h1>Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen</h1>
+				</div>
+				<button class="button-watch-film">Bekijk de film</button>
+			</div>
+			<ul class="social-links">
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Linkedin</a></li>
+			</ul>
+		</section>
 	</div>
 	<div class="materials">
 		<div class="container">
@@ -41,30 +47,30 @@
 				<button class="button-materials">Lees meer</button>
 			</div>
 			<div class="slider-materials">
-				<div class="slide">
-					<img src="images/image-material.png" alt="image-materials">
-				</div>
-				<div class="slide">
-					<img src="images/image-material.png" alt="image-materials">
-				</div>
-				<div class="slide">
-					<img src="images/image-material.png" alt="image-materials">
-				</div>
-				<div class="slide">
-					<img src="images/image-material.png" alt="image-materials">
+				<div class="slider-inner">
+					<div class="slide">
+						<img src="images/image-material.png" alt="image-materials">
+					</div>
+					<div class="slide">
+						<img src="images/image-material.png" alt="image-materials">
+					</div>
+					<div class="slide">
+						<img src="images/image-material.png" alt="image-materials">
+					</div>
+					<div class="slide">
+						<img src="images/image-material.png" alt="image-materials">
+					</div>
 				</div>
 			</div>
-			<div class="clearfix"></div>
 		</div>
 	</div>
 	<div class="innovation">
 		<div class="container">
-			<div></div>
 			<h2 class="innovation-title">Innovatie</h2>
 			<div class="innovation-content">
 				<p>Wij hebben als doel om de EcoCabins voortdurend verder te ontwikkelen en innoveren, zodat de EcoCabins uiteindelijk 100% duurzaam en circulair zijn. Voorwaarde hierbij is dat de EcoCabins betaalbaar blijven. Met behulp van de zon, de wind en de beste isolatie geniet u van.</p>
 				<p>Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien mogelijk duurzame en/of natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik De voordelen van bouwen.</p>
-			</div>	
+			</div>
 		</div>
 	</div>
 	<div class="about-cabins">
@@ -97,7 +103,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="clearfix"></div>	
+		<div class="clearfix"></div>
 	</div>
 	<footer>
 		<p class="footer-mail">info@eco-cabins.com</p>
@@ -110,14 +116,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script>
-		$('.slider-materials').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-		  	autoplay: true,
-		  	autoplaySpeed: 1000,
-		  	dots: true,
-		  	arrows: false,
-		});
+	$('.slider-materials .slider-inner').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 1000,
+		dots: true,
+		arrows: false,
+	});
 	</script>
 </body>
+
 </html>

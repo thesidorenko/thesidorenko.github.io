@@ -26,6 +26,9 @@ body {
 
 .header {
 	padding-top: 50px;
+}
+
+.header>.container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -44,7 +47,8 @@ body {
 .main-menu li a {
 	text-decoration: none;
 	color: #fff;
-	margin-right: 40px;
+	margin-right: 20px;
+	padding: 10px 20px;
 }
 
 .main-menu li:last-child a {
@@ -55,13 +59,97 @@ body {
 	color: #606B74;
 	background-color: #fff;
 	border-radius: 4px;
-	padding: 10px 20px;
+}
+
+/*
+* Site description section
+*/
+
+.site-description {
+	position: relative;
+	margin-top: 180px;
+}
+
+.site-description>.container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .section-title {
 	width: 440px;
-	margin-top: 180px;
 }
+
+.button-watch-film {
+	font-family: Rubik;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 500;
+	border: none;
+	background: transparent;
+	float: right;
+	position: absolute;
+	right: 175px;
+	bottom: 65px;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+
+.button-watch-film:before {
+	content: '\25B6';
+	padding: 13px;
+	font-size: 14px;
+	padding: 11px 13px 12px 15px;
+	margin-right: 10px;
+	background: #FFF;
+	color: #000;
+	border-radius: 50%;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.social-links {
+	position: absolute;
+	right: 30px;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transform: rotate(90deg) translate(25%, 0);
+	transform-origin: right top;
+}
+
+.social-links li {
+	display: inline-block;
+}
+
+.social-links li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	margin-right: 20px;
+	padding: 10px 20px;
+}
+
+.social-links li a:last-child {
+	margin-right: 0;
+}
+
+.social-links li a:hover {
+	color: #606B74;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.social-links li:last-child {
+	margin-right: 0;
+}
+
+/*
+* END Site description section
+*/
 
 .description-houses {
 	color: #fff;
@@ -80,77 +168,28 @@ h1 {
 	margin: 15px 0 0 0;
 }
 
-.button-watch-film {
-	font-family: Rubik;
-	font-size: 12px;
-	color: #fff;
-	font-weight: 500;
-	border: none;
-	background: transparent;
-	float: right;
-	position: absolute;
-    right: 175px;
-    bottom: 65px;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-}
-
-.button-watch-film:before {
-	content: '\25B6';
-	padding: 13px;
-	font-size: 14px;
-	padding: 11px 13px 12px 15px;
-	margin-right: 10px	;
-	background: #FFF;
-	color: #000;
-	border-radius: 50%;
-	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
-}
-
-.social-links {
-	padding: 0;
-	list-style: none;
-	transform: rotate(90deg);
-	position: absolute;
-	right: -80px;
-	bottom: 250px;
-}
-
-.social-links li {
-	display: inline-block;
-	margin-right: 40px;
-}
-
-.social-links li a {
-	text-decoration: none;
-	color: #fff;
-	font-family: Rubik;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 12px;
-}
-
-/*.social-links li a:hover {
-	color: #606B74;
-	background-color: #fff;
-	border-radius: 4px;
-	padding: 10px 20px;
-}*/
-
-.social-links li:last-child  {
-	margin-right: 0;
-}
-
 .materials {
 	padding: 60px 0;
 	position: relative;
 }
 
+.materials>.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.materials>.container:after {
+	content: '';
+	position: absolute;
+	top: 195px;
+	left: calc(100% - 285px);
+	background: #222F33;
+	width: 100vw;
+	height: 100%;
+}
+
 .about-materials {
 	width: 400px;
-	float: left;
-	margin-right: 200px;
 }
 
 .title-materials {
@@ -159,6 +198,7 @@ h1 {
 	font-weight: 900;
 	font-size: 30px;
 	color: #222F33;
+	margin-top: 0;
 	margin-bottom: 15px;
 }
 
@@ -193,27 +233,37 @@ h1 {
 }
 
 .slider-materials {
-	z-index: 1;
+	width: 325px;
 	margin-top: -100px;
-
+	z-index: 1;
 }
 
+.slider-materials .slick-dots {
+	bottom: 20px;
+}
 
+.slider-materials .slick-dots li button:before {
+	content: "";
+	background: #fff;
+	opacity: 0.4;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+}
+
+.slider-materials .slick-dots li.slick-active button:before {
+	opacity: 1;
+}
+
+.slider-inner .slide img {
+	width: 325px;
+	height: 366px;
+}
 
 .innovation {
 	background: #222F33;
 	padding: 70px 0 80px 0;
 	position: relative;
-}
-
-.innovation:before {
-	content: "";
-	background: #222F33;
-	min-height: 150px;
-	min-width: 555px;
-	position: absolute;
-	right: 0;
-	top: -49%;
 }
 
 .innovation-title {
