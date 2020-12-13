@@ -21,14 +21,15 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 header:after {
 	content: url(../images/site-decor-pink.png);
 	position: absolute;
 	z-index: -1;
-	right: 0;
-	top: 0;
+	right: -30px;
+	top: -25px;
 }
 
 .logo {
@@ -60,7 +61,7 @@ nav {
 }
 
 
-.nav-links li:first-child {
+.nav-links li:first-child a {
 	font-weight: 800;
 	color: #DAA520;
 }
@@ -70,17 +71,16 @@ nav {
 	color: rgba(34, 34, 34, 0.75);
 	font-size: 16px;
 	text-decoration: none;
-
-	 text-decoration: none;
-    background-image: linear-gradient(#DAA520, #DAA520);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .4s;
+	text-decoration: none;
+	background-image: linear-gradient(#DAA520, #DAA520);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .4s;
 }
 
 .nav-links li a:hover {
-background-size: 100% 2px;
+	background-size: 100% 2px;
 }
 
 .button_sign-up {
@@ -108,7 +108,7 @@ background-size: 100% 2px;
 	height: 382px;
 }
 
-.main_section > .container{
+.main_section>.container {
 	display: flex;
 	justify-content: space-between;
 }
@@ -165,7 +165,7 @@ background-size: 100% 2px;
 	top: 400px;
 }
 
-.about_us > .container:after {
+.about_us>.container:after {
 	content: url(../images/decor-yellow.png);
 	position: absolute;
 	top: 130px;
@@ -179,14 +179,28 @@ background-size: 100% 2px;
 	align-items: center;
 	margin-bottom: 65px;
 	margin-top: 120px;
+	position: relative;
+}
+
+.common_heading:before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	display: block;
+	top: 25px;
+	background: #000;
+	width: 100%;
+	top: 50%;
 }
 
 .common_heading h3 {
+	background: #fff;
 	font-size: 36px;
 	font-weight: 700;
 	color: #3E3F43;
 	margin: 0;
 	position: relative;
+	padding-right: 5px;
 }
 
 .common_heading h3:before {
@@ -195,20 +209,9 @@ background-size: 100% 2px;
 	vertical-align: middle;
 }
 
-.common_heading h3:after {
-	content: "";
-	position: absolute;
-	height: 1px;
-	display: block;
-	top: 25px;
-	background: #000;
-	/*width: 515px;*/
-	/*left: 255px;*/
-	width: 215px;
-	left: 300px;
-}
-
 .common_heading h2 {
+	position: relative;
+	background: #fff;
 	color: rgba(34, 34, 34, 0.1);
 	font-weight: 800;
 	font-size: 72px;
@@ -352,11 +355,13 @@ background-size: 100% 2px;
 	margin-bottom: 0;
 }
 
-.category-desk, .category-shelf {
+.category-desk,
+.category-shelf {
 	background: #F9BDBD;
 }
 
-.category-chair, .category-electronics {
+.category-chair,
+.category-electronics {
 	background: #F7DEA6;
 }
 
@@ -377,12 +382,14 @@ background-size: 100% 2px;
 }
 
 .category button {
+	width: 123px;
+	height: 40px;
 	font-size: 18px;
+	font-family: 'Nunito', sans-serif;
 	color: #3E3F43;
 	border: 1px solid #3E3F43;
 	border-radius: 4px;
 	background: transparent;
-	padding: 8px 18px;
 	cursor: pointer;
 	outline: none;
 	position: absolute;
@@ -391,6 +398,7 @@ background-size: 100% 2px;
 }
 
 .category button:hover {
+	font-weight: 700;
 }
 
 .photo-category {
@@ -426,7 +434,8 @@ background-size: 100% 2px;
 	margin-bottom: 140px;
 }
 
-.interior-1, .interior-2 {
+.interior-1,
+.interior-2 {
 	display: inline-block;
 	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
@@ -538,7 +547,7 @@ background-size: 100% 2px;
 	padding: 60px 0 100px 0;
 }
 
-.subscribe > .container {
+.subscribe>.container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -612,7 +621,7 @@ footer {
 .footer-links p {
 	font-weight: 600;
 	font-size: 18px;
-	color: #333;	
+	color: #333;
 }
 
 .footer-links ul li {
@@ -646,12 +655,3 @@ footer {
 	color: #8D8D8D;
 	text-transform: uppercase;
 }
-
-
-#F9BDBD
-#F7DEA6
-#A8DCEC
-
-
-
-
