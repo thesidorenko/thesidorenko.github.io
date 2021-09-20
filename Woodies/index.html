@@ -3,26 +3,36 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Woodies</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<header>
-		<a class="logo" href="#"><img src="images/logo.png">Woodies</a>
+		<a class="logo" href="#"><img alt="logo" src="images/logo.png">Woodies</a>
 		<nav>
-			<ul class="nav-links">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">How it works</a></li>
-				<li><a href="#">Categories</a></li>
-				<li><a href="#">Testimony</a></li>
-			</ul>
+			<div class="topnav" id="myTopnav">
+				<a href="#home" class="active">Home</a>
+				<a href="#news">Abous us</a>
+				<a href="#contact">How it works</a>
+				<a href="#about">Categories</a>
+				<a href="#about">Testimony</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+
 			<button class="button_sign-up">Sign up</button>
+			<div class="temp">
+				<span></span>
+				<img src="http://cdn.weatherapi.com/weather/64x64/day/113.png" alt="icon-weather">
+			</div>
 		</nav>
 	</header>
 	<section class="main_section">
@@ -193,7 +203,7 @@
 		<div class="container">
 			<div class="footer-top">
 				<div class="footer-links">
-					<a class="logo" href="#"><img src="images/logo.png">Woodies</a>
+					<a class="logo" href="#"><img src="images/logo.png" alt="logo">Woodies</a>
 					<ul>
 						<li>(012) 8967453</li>
 						<li>woodies@gmail.com</li>
@@ -234,7 +244,7 @@
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<span>© 2020 Woodies</span>
+				<span>© 2021 Woodies</span>
 			</div>
 			<img src="images/footer-photo.png" alt="interior" class="footer-photo">
 		</div>
@@ -243,5 +253,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
-
 </html>
+
